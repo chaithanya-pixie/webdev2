@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaipur - VirtuTrip</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+      box-sizing: border-box;
+    }
+    
+
+    /* Header */
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative; 
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-around;
+      width: 60%; /* Adjust width of the navbar */
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 1rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ff0088;
+      transform: scale(1.05);
+    }
+
+    /* Video Section */
+    .video-section {
+      text-align: center;
+      margin: 6rem 0;
+      padding: 0 1rem;
+    }
+
+    /* Video Wrapper */
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Space between the images and video */
+      position: relative;
+    }
+
+    iframe {
+      width: 50%; /* Adjust width as needed */
+      height: 400px; /* Adjust height as needed */
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .side-image {
+      width: 200px; /* Adjust width as needed */
+      height: 200px; /* Adjust height as needed */
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Information Section */
+    .info-section {
+      margin: 6rem 1rem 3rem;
+      text-align: center;
+      padding-bottom: 3rem;
+    }
+
+    .info-section h2 {
+      font-size: 2.5rem;
+      color: #2a3d66;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .info-section .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .info-section .grid div {
+      background-color: #005f6b;
+      padding: 2rem;
+      border-radius: 15px;
+      color: white;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-section .grid div:hover {
+      background-color: #00b4d8;
+      transform: scale(1.05);
+    }
+
+    .info-section .grid div h3 {
+      font-size: 1.7rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .info-section .grid div p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #ffeb3b;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #2a3d66;
+      color: white;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        padding: 1rem;
+      }
+
+      h1, h2 {
+        font-size: 2rem;
+      }
+
+      nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        font-size: 1rem;
+        padding: 0.75rem;
+      }
+
+      .video-section iframe {
+        height: 200px;
+        width: 80%;
+      }
+
+      .info-section p {
+        font-size: 1rem;
+        color: #ff0088;
+      }
+
+      .info-section .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>VirtuTrip</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="trip-planner.html">Trip Planner</a>
+      <a href="cultural-guides.html">Cultural Guides</a>
+      <a href="about.html">About </a>
+      <a href="contact.html">Contact </a>
+      <a href="blog.html">Blog</a>    
+    </nav>
+  </header>
+
+  <section class="video-section">
+    <h2>Explore Jaipur - The Pink City</h2>
+    <div class="video-wrapper">
+      <!-- Image on the left side of the video -->
+      <img src="jaipur.jpg" alt="Jaipur Image 1" class="side-image left">
+      
+      <!-- Video in the center -->
+      <iframe src="jaipur.mp4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      <!-- Image on the right side of the video -->
+      <img src="jaipur1.jpg" alt="Jaipur Image 2" class="side-image right">
+    </div>
+  </section>
+
+  <section class="info-section">
+    <h2>About Jaipur</h2>
+    <div class="grid">
+      <div>
+        <h3>Historic Palaces</h3>
+        <p>Jaipur is known for its majestic palaces, such as the City Palace and the Jal Mahal, which reflect its royal heritage.</p>
+      </div>
+      <div>
+        <h3>Architectural Marvels</h3>
+        <p>The city is also home to unique structures like Hawa Mahal and Amer Fort, showcasing the grandeur of ancient architecture.</p>
+      </div>
+      <div>
+        <h3>Cultural Heritage</h3>
+        <p>Jaipur offers a vibrant cultural scene with festivals like Diwali and Holi, traditional dance forms, and colorful markets.</p>
+      </div>
+    </div>
+    <p>Jaipur, also known as the Pink City, is a historic city in India, the capital of Rajasthan. It attracts millions of visitors annually due to its rich culture, beautiful palaces, and forts. Don't miss the famous Jantar Mantar, Amer Fort, and Hawa Mahal when you visit.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VirtuTrip</p>
+  </footer>
+
+</body>
+</html>

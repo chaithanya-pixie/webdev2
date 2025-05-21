@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtuTrip - FAQ</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Header */
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* FAQ Section */
+    .faq {
+      padding: 2rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    .faq h2 {
+      font-size: 2rem;
+      color: #0077b6;
+      text-align: center;
+    }
+
+    .faq-item {
+      margin: 20px 0;
+    }
+
+    .faq-item h3 {
+      font-size: 1.5rem;
+      color: #0077b6;
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    .faq-item p {
+      font-size: 1rem;
+      color: #333;
+      display: none;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+      .faq h2 {
+        font-size: 1.8rem;
+      }
+
+      .faq-item h3 {
+        font-size: 1.2rem;
+      }
+
+      .faq-item p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>VirtuTrip</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="trip-planner.html">Trip Planner</a>
+      <a href="virtual-tours.html">Virtual Tours</a>
+      <a href="cultural-guides.html">Cultural Guides</a>
+      <a href="login.html">Login</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="testimonials.html">Feedbacks</a>
+      <a href="blog.html">Blog</a>
+      <a href="newsletter.html">Newsletter</a>
+    </nav>
+  </header>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How do virtual tours work?</h3>
+      <p>VirtuTrip offers immersive virtual tours through 360-degree videos, allowing you to explore landmarks and destinations online in a lifelike way.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I book real trips through VirtuTrip?</h3>
+      <p>Currently, VirtuTrip focuses on virtual experiences, but we plan to introduce booking real-world trips in the future.</p>
+    </div>
+    <!-- More FAQs can be added in the same structure -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VirtuTrip</p>
+  </footer>
+
+  <script>
+    // JavaScript to toggle the FAQ answers when the question is clicked
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('h3');
+      const answer = item.querySelector('p');
+      
+      question.addEventListener('click', () => {
+        // Toggle the visibility of the answer
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>
